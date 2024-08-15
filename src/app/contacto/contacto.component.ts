@@ -17,7 +17,7 @@ export class ContactoComponent {
   abrirGithub(){
     this.copiar.abrirVentanaGithub();
   }
-  abrirLinkedin(){
+  abrirLinkedIn(){
     this.copiar.abrirVentanaLinkedin();
   }
 }
