@@ -7,6 +7,12 @@
 html,body{
     height: 100%;
     margin:0;
+    @apply bg-[#10002b];
+    @apply lg:bg-[url('/images/background.svg')];
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     @apply scroll-smooth;
 }
 h1{

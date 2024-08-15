@@ -1,6 +1,6 @@
 <header class="flex justify-center">
-    <nav class="pt-2" >
-        <ul class="flex flex-row justify-center p-3 gap-5  max-sm:text-sm bg-purple-800/10  text-base rounded-full border border-[#dddf00] text-white font-bold">
+    <nav class="fixed max-md:hidden pt-2 z-50" >
+        <ul #menu class="flex flex-row justify-center p-3 gap-5  max-sm:text-sm bg-purple-950  text-base rounded-full text-white font-bold">
             <li class="hover:text-[#dddf00]" ><a href="#inicio">Inicio</a></li>
             <li class="hover:text-[#dddf00]" ><a href="#sobremi">Sobre Mi</a></li>
             <li class="hover:text-[#dddf00]" ><a href="#experiencia">Experiencia</a></li>
@@ -9,4 +9,59 @@
             
         </ul>
     </nav>
+    <div class="fixed md:hidden z-50 w-full h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-4 left-1/2 dark:bg-purple-950/90 dark:border-gray-600">
+        <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
+            <button data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#inicio">
+                    <img class="size-10" src="images/home.svg" alt="">
+                    <span class="sr-only">Inicio</span>
+                </a>
+            </button>
+            <div id="tooltip-home" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                Inicio
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <button data-tooltip-target="tooltip-sobremi" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#sobremi">
+                    <img class="size-10" src="images/identidad.svg" alt="">
+                    <span class="sr-only">sobremi</span>
+                </a>
+            </button>
+            <div id="tooltip-sobremi" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                sobremi
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <button data-tooltip-target="tooltip-experience" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#experiencia">
+                    <img class="size-10" src="images/experience.svg" alt="">
+                    <span class="sr-only">experiencia</span>
+                </a>
+            </button>
+            <div id="tooltip-experience" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                experiencia
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <button data-tooltip-target="tooltip-proyectos" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#proyectos">
+                    <img class="size-10" src="images/projects.svg" alt="">
+                    <span class="sr-only">proyectos</span>
+                </a>
+            </button>
+            <div id="tooltip-proyectos" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                proyectos
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <button data-tooltip-target="tooltip-contacto" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <a href="#contacto">
+                    <img class="size-10" src="images/contact.svg" alt="">
+                    <span class="sr-only">contacto</span>
+                </a>
+            </button>
+            <div id="tooltip-contacto" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                contacto
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+    </div>
+    
 </header>
