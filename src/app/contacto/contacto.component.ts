@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { UtilsService } from '../services/utils.service';
 
 @Component({
-  selector: 'app-inicio',
+  selector: 'app-contacto',
   standalone: true,
   imports: [],
-  templateUrl: './inicio.component.html',
-  styleUrl: './inicio.component.css'
+  templateUrl: './contacto.component.html',
+  styleUrl: './contacto.component.css'
 })
-export class InicioComponent {
+export class ContactoComponent {
   constructor(private copiar:UtilsService) { }
 
   copiarCorreo(){
@@ -20,5 +20,4 @@ export class InicioComponent {
   abrirLinkedin(){
     this.copiar.abrirVentanaLinkedin();
   }
-
 }

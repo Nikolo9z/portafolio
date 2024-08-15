@@ -1,3 +1,4 @@
+import { ContactoComponent } from './../contacto/contacto.component';
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { InicioComponent } from '../inicio/inicio.component';
@@ -8,10 +9,11 @@ import { SobremiComponent } from "../sobremi/sobremi.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, InicioComponent, ProyectosComponent, ExperienciaComponent, SobremiComponent],
+  imports: [HeaderComponent, InicioComponent, ProyectosComponent, ExperienciaComponent, SobremiComponent,ContactoComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  
 
 }
