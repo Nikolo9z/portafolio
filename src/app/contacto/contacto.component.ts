@@ -9,6 +9,7 @@ import { UtilsService } from '../services/utils.service';
   styleUrl: './contacto.component.css'
 })
 export class ContactoComponent {
+  correoVisible: string = 'sanchez.nicolas.9917' + '@' + 'gmail.com';
   constructor(private copiar:UtilsService) { }
 
   copiarCorreo(){
@@ -17,7 +18,7 @@ export class ContactoComponent {
   abrirGithub(){
     this.copiar.abrirVentanaGithub();
   }
-  abrirLinkedin(){
+  abrirLinkedIn(){
     this.copiar.abrirVentanaLinkedin();
   }
 }
